@@ -1,0 +1,27 @@
+Formula used:
+1. Rank_category_as_per_view =  IF(
+    RANKX(ALL(Online_Courses[Category]),
+    CALCULATE(AVERAGE(Online_Courses[Number of viewers]))) < 6,
+    CALCULATE(AVERAGE(Online_Courses[Number of viewers])),
+    BLANK()
+)
+
+2.= List.Count(Text.Split([Subtitle Language], ","))
+
+3.Instructor_rating = 
+IF(
+    RANKX(ALL(Teachers[Instructor]),
+    CALCULATE(AVERAGE(Teachers[Rating]))) <= 3,
+    CALCULATE(AVERAGE(Teachers[Rating])),
+    BLANK()
+)
+4.Duration in hour:if Text.Contains(Text.Lower([Duration]), "month") then 
+    Number.FromText(Text.Select([Duration], {"0".."9"})) * 60
+else if Text.Contains(Text.Lower([Duration]), "hour") then 
+    Number.FromText(Text.Select([Duration], {"0".."9"}))
+else if Text.Contains(Text.Lower([Duration]), "minutes") then 
+    Number.FromText(Text.Select([Duration], {"0".."9"})) / 60
+else 200
+
+5.Count of Skills Provided = 
+Text.Length([Skills]) - Text.Length(Text.Replace([Skills], ",", ""))

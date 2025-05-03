@@ -1,0 +1,32 @@
+Problem Statement:
+The EdTech startup aims to expand its recorded lecture offerings but lacks clear insights into market trends and competitor strategies. By analyzing collected data from various EdTech platforms—focusing especially on lecture categories—this project seeks to identify high-demand subjects, content gaps, and areas for enhancement. A clean and insightful category-wise dashboard will empower the company to make data-driven decisions for strategic growth in recorded lectures.
+The most Important Emphasis should be category wise.
+
+1. Course Distribution Insight
+   Analyze the distribution and count of course types across categories and sub-categories to identify content gaps and guide strategic course launches aligned with learner demand.
+
+2. Engagement Analysis
+   Calculate the average number of views per category, sub-category, and language to understand which areas attract the most viewer engagement.
+
+3. Trending Skills Identification
+   Identify the most frequently taught skills within each category to ensure content aligns with current job market and learner needs.
+
+4. Language Distribution
+   Examine the variety of languages in which each course is offered to assess multilingual content coverage.
+
+5. Language Preference by Top Categories
+   For the top 5 categories (by views), analyze viewer language preferences to guide content localization and improve accessibility.
+
+6.Subtitles vs. Views
+   Investigate how the presence of subtitles influences viewership to assess their role in accessibility and engagement.
+
+7. Top Instructors Analysis
+   Identify the top 3 instructors for each category and sub-category based on ratings, presented as a static visual to highlight consistent high performers.
+
+8. Duration vs. Engagement
+   Analyze how course duration (within set monthly and flexible hour limits) affects viewership across categories and sub-categories to guide content structuring.
+
+9. Skill Variety Impact
+   Assess whether a broader variety of skills in each category and sub-category correlates with higher viewership to understand learner preferences.
+
+
